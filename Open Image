@@ -4,6 +4,10 @@ import time
 
 # Initialize MediaPipe Face Detection
 mp_face_mesh = mp.solutions.face_mesh
+#mp_face_mesh is just a variable name and can be changed to anything that is meaningful to you
+#The mp.solutions.face_mesh module from MediaPipe provides a solution for real-time face landmark detection. 
+#Internally, it leverages a deep learning model to detect and track facial landmarks with high accuracy and efficiency.
+#Here’s an overview of the internal operation:
 face_mesh = mp_face_mesh.FaceMesh(static_image_mode=False, max_num_faces=1, min_detection_confidence=0.5)
 
 # Initialize MediaPipe Drawing
